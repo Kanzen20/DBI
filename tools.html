@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Narzędzia — Bezpieczny Internet</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Narzędzia</h1>
+      <nav aria-label="Nawigacja">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="about.html">O projekcie</a></li>
+          <li><a href="tips.html">Porady</a></li>
+          <li><a href="tools.html">Narzędzia</a></li>
+          <li><a href="contact.html">Kontakt / FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Sprawdź siłę hasła</h2>
+      <p>Wprowadź hasło poniżej, aby otrzymać ocenę i sugestie.</p>
+      <input id="pwdInput" type="password" placeholder="Wpisz hasło" aria-label="Hasło do sprawdzenia">
+      <button id="pwdCheckBtn">Sprawdź hasło</button>
+      <div id="pwdResult" class="tool-output" aria-live="polite"></div>
+    </section>
+
+    <section class="card">
+      <h2>Sprawdź ustawienia prywatności przeglądarki</h2>
+      <p>Ten skrypt sprawdzi lokalne ustawienia przeglądarki i połączenia (HTTPS, cookies, doNotTrack, WebRTC) i poda praktyczne wskazówki. Skrypt działa lokalnie i nie wysyła Twoich danych nigdzie.</p>
+      <button id="privacyCheckBtn">Sprawdź ustawienia</button>
+      <div id="privacyResult" class="tool-output" aria-live="polite"></div>
+    </section>
+
+    <section class="card">
+      <h2>Quiz o prywatności</h2>
+      <p>Krótki quiz sprawdzający podstawową wiedzę.</p>
+      <div id="quizArea"></div>
+      <button id="startQuizBtn">Rozpocznij quiz</button>
+      <div id="quizResult"></div>
+    </section>
+  </main>
+
+  <script src="js/password-check.js"></script>
+  <script src="js/privacy-check.js"></script>
+  <script src="js/privacy-quiz.js"></script>
+</body>
+</html>
